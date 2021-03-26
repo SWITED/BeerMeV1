@@ -6,7 +6,8 @@ from .models import Task
 
 # Create your views here.
 
-
+def sign_in(request):
+    return render(request, 'registration/login')
 
 def index(request):
     tasks = Task.objects.all()
